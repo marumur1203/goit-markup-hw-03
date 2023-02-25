@@ -1,0 +1,146 @@
+/* colors
+textcolor#2E2F42
+tel and mail #434455
+background: #E5E5E5;
+text in footer: #E7E9FC
+web in logocolor: #4D5AE5;
+hover #404BBF
+h2.h3 #2E2F42
+h1 white
+text #434455
+*/
+:root {
+  --primary-text-color: #434455;
+  --title-text-color: #2e2f42;
+  --active-color: #404bbf;
+  --primary-bg-color: #ffffff;
+}
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.02em;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.list {
+  list-style: none;
+}
+.button {
+  font-family: inherit;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* -------------------Header ---------------*/
+.logo {
+  color: #4d5ae5;
+  text-decoration: none;
+}
+.logo-link {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.header-link {
+  color: var(--title-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--active-color);
+}
+.contacts-link {
+  color: var(--primary-text-color);
+  font-style: normal;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--active-color);
+}
+
+/*-------------------- hero section -------------------*/
+.hero {
+  background-color: #2e2f42;
+}
+.hero-title {
+  color: #ffffff;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+.hero-button {
+  color: #ffffff;
+  background-color: #4d5ae5;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+
+/* sections */
+/* ---------Features-------- */
+.features-title {
+}
+
+.features-subtitle {
+  color: var(--title-text-color);
+}
+/*-------------Work section-----------  */
+.work-title {
+}
+/* --------------Team section------------ */
+.team-title {
+}
+.team-subtitle {
+  color: var(--title-text-color);
+}
+/* footer */
+.footer .link {
+  color: #f4f4fd;
+}
+.footer .logo {
+  color: #4d5ae5;
+}
+.footer-text {
+  color: #e7e9fc;
+  background-color: #2e2f42;
+}
+/* ----------------Portfolio-------------- */
+.projects-btn {
+  color: #4d5ae5;
+  background-color: #f4f4fd;
+}
+.projects-btn:hover,
+.projects-btn:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+.projects-subtitle {
+  color: var(--title-text-color);
+}
+.projects-link {
+  text-decoration: none;
+}
