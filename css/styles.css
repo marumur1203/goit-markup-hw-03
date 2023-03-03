@@ -1,14 +1,3 @@
-/* colors
-textcolor#2E2F42
-tel and mail #434455
-background: #E5E5E5;
-text in footer: #E7E9FC
-web in logocolor: #4D5AE5;
-hover #404BBF
-h2.h3 #2E2F42
-h1 white
-text #434455
-*/
 :root {
   --primary-text-color: #434455;
   --title-text-color: #2e2f42;
@@ -41,10 +30,13 @@ ul {
 .container {
   width: 1158px;
   margin: 0 auto;
+  padding: 0 15px;
   outline: 1px solid red;
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .list {
   list-style: none;
@@ -123,10 +115,13 @@ img {
 .contacts-list {
   display: flex;
 }
-.mail {
-  margin-left: 332px;
+.contacts {
+  margin-left: auto;
+}
+.contacts-item {
   margin-right: 40px;
 }
+
 .contacts-link {
   color: var(--primary-text-color);
   font-style: normal;
@@ -173,19 +168,17 @@ img {
 }
 
 /* sections */
-/* ---------Features-------- */
+/* ---------------------Features---------------------- */
 .features {
-  padding-top: 147px;
-  padding-bottom: 108px;
+  padding-top: 120px;
+  padding-bottom: 60px;
 }
 .features-list {
   display: flex;
+  gap: 24px;
 }
 .features-item {
-  padding-right: 24px;
-}
-.features-item:not(:last-child) {
-  padding-right: 0;
+  width: calc(100%-72px) / 4;
 }
 .features-text {
   min-width: 264px;
@@ -197,7 +190,7 @@ img {
 }
 /*-------------Work section-----------  */
 .work {
-  padding-top: 108px;
+  padding-top: 60px;
   padding-bottom: 120px;
 }
 .work-title {
@@ -208,9 +201,10 @@ img {
   display: flex;
   gap: 24px;
 }
-/* --------------Team section------------ */
+/* --------------------------Team section------------------ */
 .team {
   padding: 120px 0;
+  background-color: #f4f4fd;
 }
 .team-title {
   padding-bottom: 72px;
@@ -218,11 +212,9 @@ img {
 .team-subtitle {
   color: var(--title-text-color);
   margin-bottom: var(--secondary-margin);
-  margin-top: 32px;
   text-align: center;
 }
 .team-text {
-  margin-bottom: 32px;
   text-align: center;
 }
 .team-item {
@@ -235,27 +227,32 @@ img {
   display: flex;
   gap: 24px;
 }
-/* footer */
+.team-card {
+  padding: 32px 0;
+}
+/* ---------------------footer --------------*/
 .footer {
   background-color: #2e2f42;
   padding: 100px 0;
 }
 .footer .logo-link {
-  margin-bottom: 16px;
   color: rgba(244, 244, 253, 1);
 }
 .footer-text {
   color: #e7e9fc;
   width: 264px;
+  margin: 16px 0 0 0;
 }
 /* ----------------Portfolio-------------- */
+.projects-button {
+  padding-top: 96px;
+  padding-bottom: 72px;
+}
 .projects-btn {
   color: #4d5ae5;
   background-color: #f4f4fd;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
-  margin-top: 96px;
-  margin-bottom: 72px;
   padding: 16px 32px;
 }
 .projects-btn:hover,
@@ -264,17 +261,13 @@ img {
   background-color: #404bbf;
 }
 .projects-subtitle {
+  font-weight: 500;
   color: var(--title-text-color);
-  margin-top: 32px;
-  padding-left: 8px;
+  margin-bottom: 8px;
 }
 .projects-link {
   text-decoration: none;
 }
-.projects-text {
-  padding: 8px 0 32px 8px;
-}
-
 .projects-filter {
   display: flex;
   flex-direction: row;
@@ -282,18 +275,22 @@ img {
   align-items: center;
   gap: 24px;
 }
+/* ---------------------------projects-wrap----------------------- */
+.projects-wrap {
+  padding-bottom: 118px;
+}
 .projects-list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px 24px;
   justify-content: center;
 }
-
-.projects-item {
-  border-bottom: 1px solid #e7e9fc;
+.projects-card {
+  border: 1px solid #e7e9fc;
+  border-top: transparent;
+  padding: 32px 0 32px 16px;
 }
-.projects-wrap {
-  padding-bottom: 120px;
+.projects-item {
+  width: calc(100%-48px) / 3;
 }
