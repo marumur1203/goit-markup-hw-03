@@ -31,7 +31,7 @@ ul {
   width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 img {
   display: block;
@@ -70,11 +70,7 @@ img {
 }
 
 /* -------------------Header ---------------*/
-.header {
-  padding: 24px 0;
-  border-bottom: 1px;
-  border-bottom-color: rgba(231, 233, 252, 1);
-}
+
 .logo {
   color: #4d5ae5;
   text-decoration: none;
@@ -90,8 +86,11 @@ img {
   text-transform: uppercase;
   margin-right: 76px;
 }
-.header .container {
+
+.header-content {
+  border-bottom: solid rgba(231, 233, 252, 1) 1px;
   display: flex;
+  padding: 24px 0;
 }
 .header-list {
   display: flex;
@@ -155,6 +154,7 @@ img {
 }
 .hero-button {
   color: #ffffff;
+  font-weight: 500;
   background-color: #4d5ae5;
   padding: 16px 32px;
   border: transparent;
@@ -180,22 +180,27 @@ img {
 .features-item {
   width: calc((100% - 72px) / 4);
 }
+.features-subtitle {
+  font-weight: 500;
+  color: var(--title-text-color);
+  font-size: 20px;
+  line-height: 1.2;
+  margin-bottom: var(--secondary-margin);
+}
 .features-text {
   min-width: 264px;
 }
 
-.features-subtitle {
-  color: var(--title-text-color);
-  margin-bottom: var(--secondary-margin);
-}
 /*-------------Work section-----------  */
 .work {
   padding-top: 60px;
   padding-bottom: 120px;
 }
 .work-title {
-  margin-bottom: 72px;
+  font-size: 36px;
+  line-height: 1.1;
   text-align: center;
+  margin-bottom: 72px;
 }
 .work-list {
   display: flex;
@@ -207,9 +212,13 @@ img {
   background-color: #f4f4fd;
 }
 .team-title {
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
   padding-bottom: 72px;
 }
 .team-subtitle {
+  font-weight: 500;
   color: var(--title-text-color);
   margin-bottom: var(--secondary-margin);
   text-align: center;
@@ -222,6 +231,7 @@ img {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
 }
 .team-list {
   display: flex;
@@ -241,10 +251,15 @@ img {
 }
 .footer-text {
   color: #e7e9fc;
+  letter-spacing: 0.02em;
   width: 264px;
   margin-top: 16px;
 }
 /* ----------------Portfolio-------------- */
+.projects-portfolio {
+  padding-top: 96px;
+  padding-bottom: 113px;
+}
 .projects-button {
   padding-top: 96px;
   padding-bottom: 72px;
@@ -271,10 +286,7 @@ img {
   justify-content: center;
   align-items: center;
   gap: 24px;
-}
-/* ---------------------------projects-wrap----------------------- */
-.projects-wrap {
-  padding-bottom: 118px;
+  margin-bottom: 72px;
 }
 .projects-list {
   display: flex;
@@ -297,4 +309,8 @@ img {
 }
 .projects-item {
   width: calc((100% - 48px) / 3);
+  text-decoration: none;
+}
+.projects-text {
+  color: var(--primary-text-color);
 }
